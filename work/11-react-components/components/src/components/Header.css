@@ -1,0 +1,29 @@
+.header {
+    display: grid;
+    grid-template-areas:
+    "header-logo header-title"
+    "header-nav header-nav"
+    ;
+    grid-template-columns: auto 1fr;
+    background-color: skyblue;
+    }
+    .header__logo {
+    grid-area: header-logo;
+    height: 6.25rem;
+    width: 6.25rem;
+    }
+    .header__title {
+    grid-area: header-title;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem;
+    flex-direction: row;
+    }
+
+   
+
+    .header__nav {
+    grid-area: header-nav;
+    background-color: black; /* to test */
+   
+    }

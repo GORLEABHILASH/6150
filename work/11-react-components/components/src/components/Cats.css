@@ -1,0 +1,193 @@
+
+  
+  
+  .header2_title--cats{
+    text-align: center;
+  
+  
+   
+  }
+  
+  .main--cats{
+    
+    grid-area: main;
+   
+  
+    padding-top: 0;
+    
+  
+  }
+  
+  .main__list--cats{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    padding: 1rem;
+    gap:1rem;
+  
+    list-style-type: none;
+  }
+  
+  .main__item--cats{
+    display: grid;
+    grid-column: span 12;
+}
+
+.card--cats{
+   
+   
+    justify-content: space-between;
+    background-color: #eeeeee;
+    border: 0.125rem solid black;
+
+  
+}
+
+.card__title--cats{
+  text-align: center;
+
+}
+
+
+
+.card__picture--cats {
+
+  grid-area: image;
+ width: 7.813rem;
+ 
+  justify-content: center;
+  float: right;
+  padding: 1rem;
+ 
+}
+
+.card__picture--card2--cats{
+
+  grid-area: image;
+ width: 7.813rem;
+ 
+  justify-content: center;
+  float: left;
+  padding: 1rem;
+ 
+}
+
+  
+  
+  
+  
+  @media(min-width:44rem)
+  {
+   
+  
+   
+  
+  .main--cats{
+      grid-area: main;
+      
+  }  
+  
+  .header2_title--cats{
+    
+      margin-bottom: 4rem;
+  
+      text-align: center;
+  
+  }
+  
+  
+  .main__list--cats{
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      gap:1rem;
+      padding: 1rem;
+  
+      list-style-type: none;
+  }
+  
+  .main__item--cats{
+      grid-column: span 12;
+  }
+  
+  .card--cats{
+
+  
+    justify-content: space-between;
+    background-color: #eeeeee;
+    border: 0.125rem solid black;
+  
+}
+
+.card__title--cats{
+  
+  
+  text-align: center;
+
+}
+
+
+
+.card__text--cats {
+
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-areas:
+   "image  cattext"
+   "image cattext";
+
+  
+  grid-template-rows: auto auto;
+  padding: 0.5rem;
+
+   height: auto;
+}
+
+.card__text1--cats{
+  display: flex;
+
+  grid-column-start: 1;
+  grid-column-end: 10;
+  justify-content: center;
+
+  
+}
+
+.card__picture--cats {
+  display: flex;
+  grid-area: image;
+  width: 12.5rem;
+  height: 12.5rem;
+  grid-column-start: 11;
+  grid-column-end: 12;
+  justify-content: center;
+
+  padding: 1rem;
+}
+
+
+.card__text2--cats{
+  display: flex;
+
+  grid-column-start: 4;
+  grid-column-end: 13;
+  justify-content: center;
+
+  
+}
+
+.card__picture--card2--cats {
+  display: flex;
+  grid-area: image;
+  width: 12.5rem;
+  height: 12.5rem;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  justify-content: center;
+
+  padding: 1rem;
+}
+  
+  
+ 
+  
+  }
+  

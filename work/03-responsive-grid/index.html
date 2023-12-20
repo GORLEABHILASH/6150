@@ -1,0 +1,152 @@
+
+<!-- ## Header Requirements
+
+The header will have the following features:
+- A "logo" pic (a cat)
+- h1 text saying "Cats on the Internet"
+- Semantically written navigation including 3 links
+  - the links do not have to go to valid page
+
+Visual requirements of the rendered header:
+- the logo is presented to the left of the h1 text
+- You may modify the size and appearance of the h1 element as long as it visually remains a heading
+- the nav menu is horizontal links spanning the width of the header
+  - At the adaptive breakpoint the menu converts to vertical list
+- the nav links are not required to follow the 12 column grid, but that is permitted -->
+
+
+
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>I like dogs</title>
+    <link rel="stylesheet" href="styles.css" >
+  </head>
+  <body>
+    <div class ="page">
+    <header class="header">
+      <img class = "cat_logo"  src="https://placekitten.com/100/100" alt="random cat logos" />
+      <h1 class="header_title"> Cats on the Internet</h1>
+      <nav class="nav-menu">
+        <ul class="nav-menu_list" >
+          <li class="nav-menu__list" > <a class="nav-menu_link" href="#">Home</a></li>
+          <li class="nav-menu__list" > <a class="nav-menu_link" href="#">About</a></li>
+          <li class="nav-menu__list" > <a class="nav-menu_link" href="#">Contact</a></li>
+        </ul>
+      </nav>
+    
+    </header>
+
+  
+
+    
+
+    <main class="main" >
+      <h2 class="header2_title"> Cats in the News </h2>
+      <ul class = "main__list">
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Persian Cat </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=1">
+           <p class = "card__text"> Known for their luxurious long fur and calm demeanor, Persian cats are one of the most popular and affectionate breeds</p>
+           <a class = "card__link" href="#"> read more</a>
+          </div>
+
+        </li>
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Siamese Cat </h3>
+           <img class = "card__picture" alt="Siamese Cat" src="https://placekitten.com/1080/1080/?image=2">
+           <p class = "card__text"> Renowned for their striking blue almond-shaped eyes and vocal nature, Siamese cats are highly social and love attention</p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Maine Coon Cat </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=3">
+           <p class = "card__text"> As one of the largest domestic cat breeds, Maine Coons are friendly giants with tufted ears and a playful personality</p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Ragdoll Cat </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=4">
+           <p class = "card__text"> Ragdolls are gentle and docile, often going limp when held, making them lovable and cuddly companions</p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Bengal Cat </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=5">
+           <p class = "card__text"> With their leopard-like spots and energetic nature, Bengal cats are a lively and curious breed that enjoys interactive play</p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Scottish Fold Cat </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=20">
+           <p class = "card__text"> Characterized by their unique folded ears, Scottish Folds are sweet-natured, adaptable, and make wonderful family pets</p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > Sphynx </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=7">
+           <p class = "card__text"> Hairless and known for their wrinkled skin, Sphynx cats are affectionate and thrive on human attention and warmth</p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+
+        <li class = "main__item">
+          <div class ="card">
+           <h3 class = "card_title" > British Shorthair </h3>
+           <img class = "card__picture" alt="Persian Cat" src="https://placekitten.com/1080/1080/?image=8">
+           <p class = "card__text">These round-faced, chunky cats are known for their dense, plush coats and easygoing personalities, making them excellent indoor companions </p>
+           <a class = "card__link" href="#">read more</a>
+          </div>
+
+        </li>
+
+      </ul>
+      
+    </main>
+
+
+    <footer class ="footer" >
+
+      <nav class="footer-menu">
+        <ul class="footer-menu_list" >
+          <li class="footer-menu__list" > <a class="footer-menu_link" href="#">Cat Toys</a></li>
+          <li class="footer-menu__list" > <a class="footer-menu_link" href="#">Cat Food</a></li>
+          <li class="footer-menu__list" > <a class="footer-menu_link" href="#">Cat Health</a></li>
+        </ul>
+      </nav>
+      
+
+    </footer>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+

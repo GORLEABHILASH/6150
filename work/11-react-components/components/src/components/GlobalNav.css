@@ -1,0 +1,36 @@
+.global-nav__list {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 0;
+margin: 0;
+list-style: none;
+}
+
+
+.global-nav__link {
+display: inline-block;
+padding: 0.5rem 1rem;
+font-size: 1.3rem;
+color: #2ae9ae;
+}
+.global-nav__link:hover {
+background-color: dodgerblue;
+color: black;
+}
+
+.global-nav__list.global-nav__list--hidden{
+    display: none;
+}
+
+@media (width > 44rem)
+{
+    .global-nav__toggle{
+        display: none;
+    }
+ 
+    .global-nav__list.global-nav__list--hidden{
+        display: flex;
+    }
+
+}

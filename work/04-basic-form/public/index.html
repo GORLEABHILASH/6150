@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <div class ="page">
+        <header class ="header">
+            <h1 class="header_title">Save the Cats</h1>
+            <nav class ="nav-menu">
+                <ul class = "nav-menu_list" >
+                    <li class = "nav-menu__list" > <a class="nav-menu_link" href="#">Home</a></li>
+                    <li class = "nav-menu__list" > <a class="nav-menu_link" href="#">About </a></li>
+                    <li class = "nav-menu__list" > <a class="nav-menu_link" href="#">Contact</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <main class="main">
+
+            <form class ="form" action ="/submit" method ="post" > 
+
+
+                <div class ="form_field" >
+                <label class="form_field_message">* indicates required field<label>
+                </div>
+            
+                <div class ="form_field" >
+                <label for ="name" class ="form_label form_label_name"  >Name:<span class="form_field_required">*</span></label>
+                <input type="text" class ="form_input form_input_name" id ="name" name ="name" required>
+                </div>
+               
+                
+                <div class ="form_field" >
+                <label for ="email"  class ="form_label form_label_email" >Email:<span class="form_field_required">*</span></label>
+                <input type="email" class ="form_input form_input_email"id ="email"  name="email" required>
+                </div>
+                 
+                <div class ="form_field" >
+                <label for ="annoy_me" class ="form_label form_label_annoy_me" >Do you want us to send you annoying emails?</label>
+                <input type="checkbox" class ="form_input form_input_annoy_me"  id = "annoy_me" name="annoy_me" checked>
+                </div>
+                
+                <div class ="form_field" >
+                <label for="tier" class ="form_label form_label_tier">Select a Tier:<span class="form_field_required">*</span></label>
+                <select id="tier" class ="form_input form_input_tier" name="tier" required>
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+                </div>
+         
+                <div class ="form_field" >
+                    <input type="submit" class ="form_submit" value="Register">
+                </div>
+
+         
+            </form>
+
+        </main>
+        <footer class="footer">
+            <nav class="footer-menu">
+                <ul class="footer-menu_list" >
+                  <li class="footer-menu__list" > <a class="footer-menu_link" href="#">privacy policy</a></li>
+                 
+                </ul>
+              </nav>
+
+        </footer>
+    </div>
+    
+</body>
+</html>

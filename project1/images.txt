@@ -1,0 +1,31 @@
+image-file-name:doglogo.avif
+image-url:https://images.unsplash.com/photo-1561037404-61cd46aa615b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80
+image-alt:picture of cute looking dog"
+
+
+image-file-name:lady&dog.avif
+image-url:https://images.unsplash.com/photo-1625321171045-1fea4ac688e9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2942&q=80
+image-alt:picture of dog being groomed by a women"
+
+
+image-file-name:man&dog.avif
+image-url:https://images.unsplash.com/photo-1528846104175-4fd300ee59da?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8ZG9nJTIwZ3Jvb21pbmd8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60
+image-alt:picture of dog being groomed by a man
+
+image-file-name:whitedog.avif
+image-url:https://images.unsplash.com/photo-1527526029430-319f10814151?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGRvZyUyMGdyb29taW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60
+image-alt:picture of cute looking little dog
+
+
+
+image-file-name:telephone.avif
+image-url:https://images.unsplash.com/photo-1534536281715-e28d76689b4d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA==&auto=format&fit=crop&w=2940&q=80
+image-alt:picture of old Telephone
+
+
+
+
+
+
+
+

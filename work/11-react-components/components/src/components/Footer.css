@@ -1,0 +1,57 @@
+.footer-nav{
+    background-color: black;
+   
+}
+
+.footer{
+    position: absolute;
+  bottom: 0;
+  width: 100%;
+
+
+}
+
+.footer-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    }
+    .footer-nav__link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-size: 1.3rem;
+    color: #2ae9ae;
+    }
+    .footer-nav__link:hover {
+    
+    color: dodgerblue;
+    }
+    
+    .footer-nav__list.footer-nav__list--hidden{
+        display: none;
+    }
+    
+    @media (width > 44rem)
+    {
+        .footer-nav__toggle{
+            display: none;
+        }
+     
+        .footer-nav__list.footer-nav__list--hidden{
+            display: flex;
+        }
+
+        .footer{
+            position: absolute;
+          bottom: 0;
+          width: 100%;
+        
+        
+        }
+    
+    }
+
+

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" >
+    <script defer src="main.js">  </script>
+</head>
+<body>
+    <div class ="page">
+        <header class ="header">
+            <h1 class="header_title">Save the Cats</h1>
+            <nav class ="nav-menu">
+                <ul class = "nav-submenu" >
+                    <li class = "nav-menu__list" > <a class="nav-menu__link" href="home.html">Home</a></li>
+                    <li class = "nav-menu__list" > <a class="nav-menu__link" href="about.html">About </a></li>
+                    <li class = "nav-menu__list" > <a class="nav-menu__link" href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+        <main class="main">
+
+            <form class ="registar-form" action ="/register" method ="post" > 
+
+
+               
+                <label class="registar-form__message">* indicates required field</label>  
+           
+            
+                <span class = "registar-form__error--name" >Username is required </span>
+                <label for ="registar-form__input--name" class ="registar-form__label registar-form__label--name"  >Name:<span class="registar-form__required">*</span></label>     
+                <input type="text" class ="registar-form__input registar-form__input--name" id ="registar-form__input--name" name ="Name">
+                
+                
+           
+               
+                
+                <span class = "registar-form__error--email"  > </span>
+                <label for ="registar-form__input--email"  class ="registar-form__label registar-form__label--email" >Email:<span class="registar-form__required">*</span></label>   
+                <input type="text" class ="registar-form__input registar-form__input--email"id ="registar-form__input--email"  name="Email">
+                
+                
+                
+                <span class = "registar-form__error--confirm-email" > </span>
+                <label for ="registar-form__input--confirm-email"  class ="registar-form__label registar-form__label--confirm-email" >Confirm Email:<span class="registar-form__required">*</span></label>   
+                <input type="text" class ="registar-form__input registar-form__input--confirm-email" id ="registar-form__input--confirm-email"  name="Confirm Email">
+                
+                
+                <input type="checkbox" class ="registar-form__checkbox"  id = "registar-form__checkbox--mailing-list" name="wants-spam">
+                <label for ="registar-form__checkbox--mailing-list" class ="registar-form__label--checkbox" >Yes! Fill my Inbox!</label>
+                
+             
+               
+       
+                
+             
+                <label for="registar-form__tier" class ="registar-form__label registar-form__label--tier">Select a Tier:</label>
+                <select id="registar-form__tier" class ="registar-form__input registar-form__input--tier" name="tier" >
+                    <option value="" selected disabled>Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+            
+         
+               
+                <button type="submit" class ="registar-form__button" >Register</button> 
+              
+
+         
+            </form>
+
+        </main>
+        <footer class="footer">
+            <nav class="footer-menu">
+                <ul class="footer-submenu" >
+                  <li class="footer-menu__list" > <a class="footer-menu__link" href="privacy.html">privacy policy</a></li>
+                 
+                </ul>
+              </nav>
+
+        </footer>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,341 @@
+*, ::after, ::before{
+    box-sizing: border-box;
+    margin : 0;
+}
+
+html, body {
+    
+    height: 100%;
+    line-height: 1.6;
+
+    background-color: papayawhip ;
+    color:black;
+
+    font-family: sans-serif;
+  
+
+    
+
+}
+
+.page{
+
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100%;
+
+  
+   }
+
+
+   .header {
+    
+    grid-template-areas:
+      "cat_logo" 
+      "header_title"
+      "navmenu";
+    grid-template-rows: 1fr auto auto;
+    grid-area: header;
+    align-items: center;
+    text-align: center;
+
+    background-color: #333;
+    color: white;
+
+   
+  }
+  
+  .cat_logo {
+    grid-area: cat_logo;
+
+    align-items: center;
+
+  }
+  
+  .header_title {
+    grid-area: header_title;
+  }
+  
+  .nav-menu {
+    grid-area: navmenu;
+    background-color: #DCDCDC;
+  }
+  
+
+.nav-menu_list{
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    list-style-type: none;
+
+}
+.header2_title{
+    text-align: center;
+
+    color:RoyalBlue;
+   
+}
+
+.main{
+    grid-area: main;
+    padding: 1rem;
+
+  
+}
+
+.main__list{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:1rem;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.main__item{
+    grid-column: span 6;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card_title{
+    text-align: center;
+}
+
+
+
+.card__link{
+
+    align-self: center;
+    margin-top: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    background-color: #D3D3D3;
+   
+
+    text-decoration: none;
+
+  
+
+}
+
+
+
+.footer{
+    grid-area: footer;
+   justify-content: space-around;
+   padding: 0.5rem 2rem;
+
+    background-color: slategrey;
+    
+
+    
+}
+
+.footer-menu_list {
+    grid-template-columns: repeat(12,1fr);
+    display: grid;
+    padding-top: 0.5rem;
+    padding-left: 0;
+    gap: 10px;
+    
+    list-style-type: none;
+    
+    
+  }
+
+  .footer-menu__list {
+    grid-column: span 12;
+    text-align: center;
+
+    color:black;
+  }
+
+  .footer-menu_link{
+
+    color:SeaShell;
+
+    font-size: small;
+
+   
+
+  }
+
+
+
+
+@media(min-width:50rem)
+{
+    /* html,body{
+    background-color: cornflowerblue;
+    } */
+   
+
+    .page {
+        display: grid;
+        grid-template-areas:
+          "header header"
+          "main main"
+          "footer footer";
+        grid-template-rows: auto auto auto;
+      }
+      
+      .header {
+        display: grid;
+        grid-template-areas:
+          "cat_logo header_title"
+          "navmenu navmenu";
+        grid-template-rows: auto auto;
+        grid-template-columns: auto 1fr; /* Add this line to create two columns */
+        grid-area: header;
+        align-items: center;
+      }
+      
+      .cat_logo {
+        grid-area: cat_logo;
+      }
+      
+      .header_title {
+        grid-area: header_title;
+      }
+      
+      .nav-menu {
+        grid-area: navmenu;
+        background-color: #DCDCDC;
+      }
+      
+    
+    .nav-menu_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 0.5rem;
+    padding-left: 0;
+
+    list-style-type: none;
+    
+
+    }
+
+    .nav-menu_link {
+    display: flex;
+    flex-direction: row;
+
+    color:black;
+    }
+      
+
+    .main{
+        grid-area: main;
+       
+    }  
+
+    .header2_title{
+        text-align: center;
+
+    }
+
+    .main__list{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap:1rem;
+    
+        list-style-type: none;
+    }
+    
+    .main__item{
+        grid-column: span 3;
+    }
+    
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    
+        height: 100%;
+    }
+    
+    .card_title{
+        text-align: center;
+    }
+    
+    
+    
+    .card__link{
+    
+        align-self: center;
+        margin-top: auto;
+        padding: 1rem;
+        border-radius: 1rem;
+    
+        color: white;
+        background-color: DarkSeaGreen;
+    
+        text-decoration: none;
+    
+      
+    
+    }
+    
+    
+    .footer{
+        grid-area: footer;
+       justify-content: space-around;
+       padding: 0.5rem 2rem;
+        
+
+        
+    }
+
+    .footer-menu_list {
+        display: grid;
+        gap: 10px;
+        grid-template-columns: repeat(12,1fr);
+        padding-top: 0.5rem;
+        padding-left: 0;
+     
+        list-style-type: none;
+        
+        
+       
+      }
+    
+      .footer-menu__list {
+        grid-column: span 4;
+        text-align: center;
+
+        
+        
+      }
+     
+  
+
+  
+}
+
+@media(max-width:30rem)
+{
+
+    .main__list{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        gap:1rem;
+    
+        list-style-type: none;
+    }
+    
+    .main__item{
+        grid-column: span 12;
+    }
+    
+}

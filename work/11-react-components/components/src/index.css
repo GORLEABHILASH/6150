@@ -1,0 +1,16 @@
+*, *::before, *::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,body {
+  
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+  background-color: papayawhip;
+}
+
+#root {
+  height: 100%;
+  }

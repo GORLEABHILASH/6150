@@ -1,0 +1,524 @@
+*, ::after, ::before{
+  box-sizing: border-box;
+  margin : 0;
+}
+
+html, body {
+  
+  height: 100%;
+  width: 100%;
+
+  line-height: 1.6;
+
+  background-color: #82DDF0;
+  color:black;
+
+  font-family: sans-serif;
+
+
+  
+
+}
+
+
+.page{
+
+  display: grid;
+  grid-template-areas: 
+  "header-logo"
+  "main"
+  "footer";
+  grid-template-rows: auto 1fr auto;
+  height: 100%;
+
+}
+
+.header {
+  display: grid;
+  grid-template-areas:
+    "header-logo"
+    "header_title"
+    "navmenu";
+  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto 1fr;
+  align-items: center;
+  text-align: center;
+
+  background-color: #000000;
+  color: #33ffc6;
+}
+
+.dog_logo{
+    
+ 
+  
+  padding: 1rem;
+  max-width: 100%; 
+  max-height: 100%; 
+  height: auto;  
+ 
+}
+.header-logo {
+
+  grid-area: header-logo;
+  grid-column: span 12;
+
+
+}
+
+.header_title{
+ 
+  grid-area: header_title;
+  grid-column: span 12;
+  
+}
+
+.nav-menu {
+grid-area: navmenu;
+grid-column: span 12;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+
+padding: 0;
+margin:0;
+
+color: white;
+
+list-style-type: none;
+}
+
+.nav-menu__button{
+border:none;
+width: 15rem;
+padding: 1rem;
+background: inherit;
+
+color: #000000;
+background-color: #33ffc6;
+
+
+
+cursor: pointer;
+text-decoration: underline ;
+font-size: 1rem;
+
+}
+
+.nav-menu__list:hover .nav-submenu,
+.nav-menu__list:focus-within  .nav-submenu{
+
+max-height: initial;
+color: white;
+
+}
+
+.nav-submenu__link:hover{
+display: inline-block;
+
+
+width: 100%;
+
+background-color: #111;
+color: white;
+
+}
+
+.nav-submenu{
+position: absolute;
+
+max-height: 0;
+padding: 0;
+margin:0;
+width: 15rem;
+/* height: 2rem; */
+
+background-color: #33ffc6;
+
+color: white;
+
+
+overflow: hidden;
+
+list-style-type: none;
+}
+
+
+.nav-menu_list {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+padding: 0;
+margin:0;
+
+color: white;
+
+list-style-type: none;
+
+
+}
+
+.nav-menu_link {
+display: flex;
+flex-direction: row;
+padding: 10rem;
+
+color: white;
+}
+
+
+
+
+
+.header2_title{
+  text-align: center;
+
+  color: #820B8A;
+ 
+}
+
+.main{
+  
+  grid-area: main;
+  padding-top: 1rem;
+
+
+}
+
+.main__list{
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap:1rem;
+  padding: 0;
+
+  list-style-type: none;
+}
+
+.main__item{
+  grid-column: span 6;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card_title{
+  text-align: center;
+}
+
+
+
+.card__link{
+
+  align-self: center;
+  margin-top: auto;
+  padding: 1rem;
+  border-radius: 1rem;
+
+  color: white;
+  background-color: #DB162F;
+ 
+  text-decoration: none;
+
+}
+
+
+
+.footer{
+  grid-area: footer;
+ justify-content: space-around;
+ padding: 0.5rem 2rem;
+
+  background-color: #000000;
+  
+
+  
+}
+
+.footer-menu_list {
+  grid-template-columns: repeat(12,1fr);
+  display: grid;
+  padding-top: 0.5rem;
+  padding-left: 0;
+  gap: 1rem;
+  
+  list-style-type: none;
+  
+  
+}
+
+.footer-menu__list {
+  grid-column: span 12;
+  text-align: center;
+
+  color:black;
+}
+
+.footer-menu_link{
+     font-size: small;
+
+      color: #33ffc6 ;
+ 
+
+}
+
+
+
+
+@media(min-width:50rem)
+{
+ 
+
+  .page {
+    display: grid;
+    grid-template-areas:
+      "header header"
+      "main main"
+      "footer footer";
+    grid-template-rows: auto 1fr auto;
+
+    height: 100%;
+  }
+  
+  .header {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+   grid-template-areas:
+    "header-logo header_title "
+    "navmenu navmenu";
+   grid-template-rows: auto auto;
+    grid-area: header;
+    align-items: center;
+  }
+
+  .dog_logo{
+  
+    padding: 1rem;
+
+    max-width: 100%;  
+    max-height: 100%; 
+    height: auto;  
+   
+  }
+  
+
+.header_title{
+  
+    grid-area: header_title;
+    grid-column-start: 6;
+    grid-column-end: 12;
+    
+    justify-self: start;
+    
+}
+
+
+.header-logo {
+  
+  grid-area: header-logo;
+  grid-column: 5;
+  
+}
+
+
+
+.nav-menu {
+grid-area: navmenu;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+grid-column: span 12;
+padding: 0;
+margin:0;
+
+color: white;
+
+list-style-type: none;
+
+}
+
+.nav-menu__button{
+border:none;
+
+background: inherit;
+
+padding: 1rem;
+width: 15rem;
+
+color: #000000;
+background-color: #33ffc6;
+
+
+cursor: pointer;
+text-decoration: underline ;
+font-size: 1rem;
+
+}
+
+.nav-menu__list:hover .nav-submenu,
+.nav-menu__list:focus-within  .nav-submenu{
+
+max-height: initial;
+color: white;
+
+}
+
+.nav-submenu__link:hover{
+display: inline-block;
+
+width: 100%;
+
+background-color: #111;
+color: white;
+
+}
+
+.nav-submenu{
+position: absolute;
+
+max-height: 0;
+padding: 0;
+margin:0;
+width: 15rem;
+
+
+background-color: #33ffc6;
+color: white;
+
+overflow: hidden;
+list-style-type: none;
+}
+
+
+.nav-menu_list {
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+
+padding: 0;
+margin:0;
+
+color: white;
+
+list-style-type: none;
+
+}
+
+.nav-menu_link {
+display: flex;
+flex-direction: row;
+padding: 10rem;
+
+color: white;
+}
+
+
+.main{
+    grid-area: main;
+    
+}  
+
+.header2_title{
+  
+    margin-bottom: 4rem;
+
+    text-align: center;
+
+}
+
+
+.main__list{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap:1rem;
+
+    list-style-type: none;
+}
+
+.main__item{
+    grid-column: span 3;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ 
+    height: 100%;
+}
+
+.card_title{
+    text-align: center;
+}
+
+
+
+.card__link{
+
+    align-self: center;
+    margin-top: auto;
+    padding: 1rem;
+    border-radius: 1rem;
+
+    color: white;
+    background-color: #DB162F;
+
+    text-decoration: none;
+
+  
+
+}
+
+
+.footer{
+    grid-area: footer;
+    justify-content: space-around;
+    padding: 0;
+    
+
+    
+}
+
+.footer-menu_list {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(12,1fr);
+    padding-top: 0.5rem;
+    padding-left: 0;
+  
+    list-style-type: none;
+    
+    
+    
+  }
+
+  .footer-menu__list {
+    grid-column: span 4;
+    text-align: center;
+
+    
+    
+  }
+
+}
+
+@media(max-width:30rem)
+{
+
+  .main__list{
+      display: grid;
+      grid-template-columns: repeat(12,1fr);
+      gap:1rem;
+  
+      list-style-type: none;
+  }
+  
+  .main__item{
+      grid-column: span 12;
+  }
+  
+}

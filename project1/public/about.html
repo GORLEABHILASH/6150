@@ -1,0 +1,93 @@
+
+<!-- ## Header Requirements
+
+The header will have the following features:
+- A "logo" pic (a cat)
+- h1 text saying "Cats on the Internet"
+- Semantically written navigation including 3 links
+  - the links do not have to go to valid page
+
+Visual requirements of the rendered header:
+- the logo is presented to the left of the h1 text
+- You may modify the size and appearance of the h1 element as long as it visually remains a heading
+- the nav menu is horizontal links spanning the width of the header
+  - At the adaptive breakpoint the menu converts to vertical list
+- the nav links are not required to follow the 12 column grid, but that is permitted -->
+
+
+
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <meta charset= "UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>About Professional Dog Grooming</title>
+    <link rel="stylesheet" href="aboutstyles.css" >
+  </head>
+  <body>
+    <div class ="page">
+    <header class="header">
+        <div class="header-logo">
+            <a  class="header-logo_link" href="index.html">
+                <img class="dog_logo" src="assets/doglogo.avif" alt="picture of cute looking dog" />
+            </a>
+        </div>
+      <h1 class="header_title"> Professional Dog Grooming </h1>
+      <nav class="nav-menu">
+
+        <ul class = "nav-menu_list">
+          <li class = "nav-menu__list">
+            <button class = "nav-menu__button" type = "button" >Menu</button>
+            <ul class ="nav-submenu" >
+              <li class = "nav-submenu__item"><a class = "nav-submenu__link" href = 'index.html'>Home</a> </li>
+              <li class = "nav-submenu__item"> <a class = "nav-submenu__link" href = 'about.html'>About</a> </li>
+              <li class = "nav-submenu__item"> <a class = "nav-submenu__link" href = 'register.html'>Register</a> </li>
+            
+            </ul>
+          
+        </ul>
+      </nav>
+    
+    </header>
+
+  
+
+    
+
+    <main class="main" >
+      <h2 class="header2_title"> About Us </h2>
+      <div class = "main-content" >
+      <p class = "main-content_text">At Professional Dog Grooming, we are dedicated to enhancing the health, happiness, and well-being of your canine companions. Our love for dogs drives our commitment to providing exceptional grooming services and a comfortable, stress-free environment for your pets.</p>
+      <p class = "main-content_text">Our team of experienced and certified groomers takes pride in their craft. We understand that grooming isn't just about aesthetics; it's about promoting your dog's overall health and happiness. We follow best practices in the industry to ensure your pet receives top-quality care.</p>
+      <p class = "main-content_text">What sets us apart is our personalized approach. We understand that each dog is unique, with its own personality and grooming needs. Whether your dog is a pampered poodle, a playful Labrador, or a curious mixed breed, we tailor our services to meet their specific requirements.</p>
+      <p class = "main-content_text">Our grooming salon is designed with your pet's comfort in mind. We use gentle, pet-friendly products, and our groomers are skilled in handling dogs with care and kindness. Your dog's safety and happiness are our top priorities.</p>
+      <p class = "main-content_text">Thank you for considering Professional Dog Grooming for your pet's grooming needs. We look forward to welcoming you and your furry friend into our salon, where they'll receive the love and attention they deserve.</p>
+    </div>
+      
+    </main>
+
+
+    <footer class ="footer" >
+
+      <nav class="footer-menu">
+        <ul class="footer-menu_list" >
+          <li class="footer-menu__list" > <a class="footer-menu_link" href="dogtoys.html">Dog Toys</a></li>
+          <li class="footer-menu__list" > <a class="footer-menu_link" href="dogfood.html">Dog Food</a></li>
+          <li class="footer-menu__list" > <a class="footer-menu_link" href="doghealth.html">Dog Health</a></li>
+        </ul>
+      </nav>
+      
+
+    </footer>
+    </div>
+
+  </body>
+</html>
+
+
+
+
+
+
+

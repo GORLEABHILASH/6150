@@ -1,0 +1,67 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card__button--logo {
+  will-change: filter;
+  transition: filter 300ms;
+}
+.card__button--logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.card__button--logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+}
+
+.card__button{
+ 
+  margin: 1rem;
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.card__button--reorder {
+  opacity: 0; 
+  animation: fadeIn 3s ease forwards; 
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; 
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+
+
+
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+
